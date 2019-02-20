@@ -189,6 +189,10 @@ class NHLRoster(Roster):
         'G': 3,
     }
 
+class WXRoster(Roster):
+    POSITION_ORDER = {
+        'CITY': 0,
+    }
 
 class RosterSelect:
     @staticmethod
@@ -206,6 +210,7 @@ class RosterSelect:
             'SOCCER': SoccerRoster(),
             'EL': ELRoster(),
             'NHL': NHLRoster(),
+            'HEAT': WXRoster(),
         }
         return roster_dict[league]
 

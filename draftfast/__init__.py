@@ -1,6 +1,7 @@
 from draftfast import (
     optimize,
     rules,
+    wx_battle_rules,
     orm,
     csv_parse,
     exposure,
@@ -14,4 +15,5 @@ assert orm
 assert csv_parse
 assert exposure
 assert pickem
+assert wx_battle_rules
 assert showdown
